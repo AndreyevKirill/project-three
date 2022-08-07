@@ -16,6 +16,15 @@ body {
     color: var(--font-color);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0%;
+}
+
 .container {
     max-width: 1108px;
     margin: 0 auto;
@@ -39,6 +48,10 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
+}
+
+.space-bottom--27 {
+    margin-bottom: 27px;
 }
 
 /*button*/
@@ -179,8 +192,9 @@ body {
 }
 
 .section--hero .title {
-    font-family: 'Poppins Bold';
+    font-family: 'Poppins';
     margin-bottom: 0px;
+    font-weight: 600;
 }
 
 .section--hero .description {
@@ -192,11 +206,11 @@ body {
     padding: 17px 40px 12px 40px;
 }
 
-.section--hero .btn-outline-success {
+/*.section--hero .btn-outline-success {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+}*/
 
 .btn-outline-success img {
     margin-right: 10px;
@@ -219,6 +233,7 @@ p.btn__description {
     background-size: cover;
     display: flex;
     padding: 84px 0px 97px 0px;
+    width: 100%;
 }
 
 .section--product .container {
@@ -247,6 +262,9 @@ p.btn__description {
     display: flex;
     flex-direction: column;
     align-items: start;
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 250px;
 }
 
 .table_col:nth-of-type(1) .col__item {
@@ -307,10 +325,11 @@ p.btn__description {
 }
 
 .section--managment .title {
-    font-family: 'Poppins Bold';
+    font-family: 'Poppins';
     font-size: 32px;
     line-height: 48px;
     margin: 0px 0px 24px;
+    font-weight: 600;
 }
 
 .section--managment .subtitle {
@@ -333,14 +352,6 @@ p.btn__description {
     line-height: 24px;
     margin: 0px 0px 8px 0px;
     letter-spacing: 0.01em;
-}
-
-.man__left .description:nth-of-type(2) {
-    margin: 0px 0px 27px 0px;
-}
-
-.man__left .description:nth-of-type(3) {
-    margin: 0;
 }
 
 .man__right {
@@ -410,21 +421,24 @@ p.btn__description {
 .customer__icon {
     width: 16px;
     height: 12px;
-    background: #FF9900;
     border-radius: 13.8542px;
     padding: 12px 10px 13px 10px;
     margin-right: 29px;
 }
 
-.customer__description {
-    margin: 0;
-    line-height: 24px;
+.customer__icon.customer__icon--yellow {
+    background: #FF9900;
 }
 
-.customer__wraper:nth-of-type(2) .customer__icon {
+.customer__icon.customer__icon--red {
     background: #F03E3D;
 }
 
-.customer__wraper:nth-of-type(3) .customer__icon {
+.customer__icon.customer__icon--blue {
     background: #4D8DFF;
+}
+
+.customer__description {
+    margin: 0;
+    line-height: 24px;
 }
