@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format detection" content="telephone=no" />
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/normalize.css" />
@@ -204,25 +205,28 @@
           </p>
         </div>
         <div class="process__row">
-          <div class="row__column">
-            <div class="expert">
+          <div class="row__left">
+            <div class="expert expert__left">
               <img class="exp__pic" src="./assets/svg/expert1.svg" />
               <div class="ability">I can take care of your pitch</div>
             </div>
-            <div class="expert">
-              <div class="ability">I can prototype your app</div>
-              <img class="exp__pic" src="./assets/svg/expert2.svg" />
-            </div>
-            <div class="expert">
+            <div class="expert expert__left">
               <div class="ability">I can design you website</div>
               <img class="exp__pic" src="./assets/svg/expert3.svg" />
             </div>
-            <div class="expert">
+          </div>
+          <div class="row__right">
+            <div class="expert expert__right">
+              <div class="ability">I can prototype your app</div>
+              <img class="exp__pic" src="./assets/svg/expert2.svg" />
+            </div>
+            <div class="expert expert__right">
               <img class="exp__pic" src="./assets/svg/expert4.svg" />
               <div class="ability">I can help marketing strategy</div>
             </div>
           </div>
         </div>
+        <button class="btn btn--success">Contact our expert</button>
       </div>
     </section>
     <section class="section section--strategies">
@@ -429,7 +433,11 @@
         <div class="footer__left">
           <div class="product">
             <a href="#" class="logo">
-              <img src="./assets/svg/logo.svg" alt="image description" />
+              <img
+                class="logo__icon"
+                src="./assets/svg/logo.svg"
+                alt="image description"
+              />
             </a>
             <a href="#" class="logo__name">Product</a>
           </div>
@@ -490,7 +498,9 @@
         </div>
       </div>
       <div class="copyright">
-        <p class="subtitle">Made With Love By Figmaland All Right Reserved</p>
+        <p class="copyright__subtitle">
+          Made With Love By Figmaland All Right Reserved
+        </p>
       </div>
     </footer>
   </body>
