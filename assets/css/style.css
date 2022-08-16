@@ -365,7 +365,7 @@ h6 {
 /*product*/
 
 .section--product {
-  background-image: url(../img/product.jpg);
+  background: url(../img/product.jpg) bottom;
   background-repeat: no-repeat;
   background-size: contain;
   padding: 110px 0px 97px 0px;
@@ -521,12 +521,9 @@ h6 {
 }
 
 /*managment*/
-.section--managment {
-  padding: 164px 0px 0px 0px;
-}
-
 .section--managment .container {
   display: flex;
+  flex-direction: column-reverse;
 }
 
 .man__left {
@@ -568,13 +565,42 @@ h6 {
   top: -21px;
 }
 
-/*customer*/
-.section--customer {
-  padding: 162px 0px 0px 0px;
+.man__pic {
+  max-width: 100%;
 }
 
+/*mdeia managment*/
+@media (max-width: 576px) {
+  .section--managment {
+    padding: 20px 0px 0px;
+  }
+
+  .man__left {
+    width: auto;
+  }
+
+  .man__right {
+    left: 0;
+    top: 0;
+    margin-bottom: 20px;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .section--managment {
+    padding: 164px 0px 0px 0px;
+  }
+
+  .section--managment .container {
+    flex-direction: row;
+  }
+}
+
+/*customer*/
 .section--customer .container {
   display: flex;
+  flex-direction: column;
 }
 
 .customer__left {
@@ -651,13 +677,37 @@ h6 {
   line-height: 24px;
 }
 
-/*collaborative*/
-.section--collaborative {
-  padding: 127px 0px 130px 0px;
+/*mdeia customer*/
+@media (max-width: 576px) {
+  .section--customer {
+    padding: 0px;
+  }
+
+  .customer__left {
+    left: 0;
+    top: 0;
+    margin: 0px 0px 20px;
+  }
+
+  .customer__pic {
+    max-width: 100%;
+  }
 }
 
+@media (min-width: 1200px) {
+  .section--customer {
+    padding: 162px 0px 0px 0px;
+  }
+
+  .section--customer .container {
+    flex-direction: row;
+  }
+}
+
+/*collaborative*/
 .section--collaborative .container {
   display: flex;
+  flex-direction: column-reverse;
 }
 
 .coll__left {
@@ -697,6 +747,37 @@ h6 {
   position: relative;
   left: 111px;
   top: -21px;
+}
+
+/*mdeia collaborative*/
+@media (max-width: 576px) {
+  .coll__pic {
+    max-width: 100%;
+  }
+
+  .coll__left {
+    width: auto;
+  }
+
+  .coll__right {
+    left: 0;
+    top: 0;
+    margin-bottom: 20px;
+  }
+
+  .section--collaborative {
+    padding: 30px 0px 0px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section--collaborative {
+    padding: 127px 0px 130px 0px;
+  }
+
+  .section--collaborative .container {
+    flex-direction: row;
+  }
 }
 
 /*process*/
