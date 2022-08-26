@@ -1,0 +1,160 @@
+/*button*/
+.btn--success {
+  font-weight: 600;
+  margin: 0 auto;
+  display: flex;
+}
+
+.btn--outline-primary {
+  margin-right: 25px;
+}
+
+/*header*/
+.header .btn--success {
+  margin-right: 17px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/*price*/
+.section--price {
+  padding: 68px 0px 152px;
+}
+
+.section--price .subtitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  letter-spacing: 0.02em;
+}
+
+.section--price .title {
+  font-weight: 700;
+  font-family: "Poppins Bold";
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  margin: 0;
+}
+
+.section--price .description {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 49px;
+}
+
+/*enterprice*/
+.section--enterprice {
+  padding: 50px 0px 0px 0px;
+  background: linear-gradient(180deg, #f7f7f7 0%, rgba(247, 247, 247, 0) 100%);
+}
+
+.section--enterprice .subtitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.04em;
+  margin-bottom: 17px;
+}
+
+.section--enterprice .title {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 51px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin: 0px 0px 7px 0px;
+}
+
+.section--enterprice .description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0px 0px 33px 0px;
+  text-align: center;
+}
+
+.section--enterprice .btn--success {
+  font-size: 18px;
+  line-height: 22px;
+  padding: 11px 18px 11px 19px;
+}
+
+/*product-used*/
+.used__bottom {
+  display: flex;
+  align-items: center;
+}
+
+.section--product-used {
+  padding: 202px 0px 0px 0px;
+}
+
+.section--product-used .title {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 51px;
+  text-align: center;
+  letter-spacing: 0.013em;
+}
+
+.used__top {
+  margin-bottom: 55px;
+}
+
+.used__bottom-left {
+  position: relative;
+  top: -11px;
+  left: 0px;
+  margin-right: 59px;
+}
+
+.used__bottom-right {
+  max-width: 543px;
+}
+
+img.pic.used__bottom-pic {
+  max-width: none;
+}
+
+.wraper--item {
+  display: flex;
+  flex-direction: column;
+}
+
+.wraper--item-icon {
+  display: flex;
+  align-items: center;
+}
+
+.wraper--icon {
+  width: 50px;
+  height: 50px;
+  background: #f4f5f7;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 14px;
+}
+
+.section--product-used .subtitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.02em;
+}
+
+.item__description {
+  margin: 0px 0px 30px 0px;
+  letter-spacing: 0.0em;
+}
+
+.wraper--item-icon {
+  margin-bottom: 19px;
+}
