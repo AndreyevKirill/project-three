@@ -4,7 +4,6 @@
   margin: 0 auto;
   display: flex;
 }
-
 .btn--outline-primary {
   margin-right: 25px;
 }
@@ -21,7 +20,6 @@
 .section--price {
   padding: 68px 0px 152px;
 }
-
 .section--price .subtitle {
   font-weight: 600;
   font-size: 24px;
@@ -126,12 +124,10 @@ img.pic.used__bottom-pic {
   display: flex;
   flex-direction: column;
 }
-
 .wraper--item-icon {
   display: flex;
   align-items: center;
 }
-
 .wraper--icon {
   width: 50px;
   height: 50px;
@@ -142,19 +138,18 @@ img.pic.used__bottom-pic {
   justify-content: center;
   margin-right: 14px;
 }
-
 .section--product-used .subtitle {
   font-weight: 600;
   font-size: 24px;
   line-height: 36px;
   letter-spacing: 0.02em;
 }
-
 .item__description {
-  margin: 0px 0px 30px 0px;
-  letter-spacing: 0.0em;
+    margin: 0px 0px 30px 0px;
+    letter-spacing: 0.0em;
 }
 
 .wraper--item-icon {
-  margin-bottom: 19px;
+    margin-bottom: 19px;
 }
+

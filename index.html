@@ -29,16 +29,9 @@
         <div class="header__right">
           <button class="btn btn--outline-primary">Sign in</button>
           <button class="btn btn--success">Sign Up</button>
-          <div class="toggle-container">
-            <input type="checkbox" id="switch" />
-            <label for="switch">
-              <img
-                class="switch__icon"
-                src="./assets/svg/triger2.svg"
-                alt="image description"
-              />
-            </label>
-          </div>
+          <button class="btn btn--triger">
+            <img src="./assets/svg/triger.svg" alt="image description" />
+          </button>
           <a class="menu-trigger menu-triger--active" href="#">
             <span></span>
             <span></span>
@@ -333,7 +326,7 @@
             <button class="btn btn--success">Order Now</button>
           </div>
           <div class="price__table--col">
-            <h3 class="description__tarif">Standard</h3>
+            <h3 class="table--col-subtitle">Standard</h3>
             <p class="table--col-description">Brief price description</p>
             <div class="price__information">
               <img class="price__icon" src="./assets/svg/5.svg" />
@@ -350,8 +343,8 @@
             <button class="btn btn--success">Order Now</button>
           </div>
           <div class="price__table--col">
-            <h3 class="description__tarif">Premium</h3>
-            <p class="description">Brief price description</p>
+            <h3 class="table--col-subtitle">Premium</h3>
+            <p class="table--col-description">Brief price description</p>
             <div class="price__information">
               <img class="price__icon" src="./assets/svg/10.svg" />
               <div class="price__information--content">
@@ -382,8 +375,10 @@
           <div class="collumn__item">
             <img src="./assets/svg/star.svg" alt="" class="item__icon" />
             <div class="item__description">
-              Product helps you see how many more days you need to work to reach
-              your financial goal.
+              <a class="description" href="#"
+                >Product helps you see how many more days you need to work to
+                reach your financial goal.</a
+              >
             </div>
             <div class="client">
               <img src="./assets/svg/client1.svg" alt="" class="client__logo" />
@@ -396,8 +391,10 @@
           <div class="collumn__item">
             <img src="./assets/svg/star.svg" alt="" class="item__icon" />
             <div class="item__description">
-              Product helps you see how many more days you need to work to reach
-              your financial goal.
+              <a class="description" href="#"
+                >Product helps you see how many more days you need to work to
+                reach your financial goal.</a
+              >
             </div>
             <div class="client">
               <img src="./assets/svg/client2.svg" alt="" class="client__logo" />
@@ -410,8 +407,10 @@
           <div class="collumn__item">
             <img src="./assets/svg/star.svg" alt="" class="item__icon" />
             <div class="item__description">
-              Product helps you see how many more days you need to work to reach
-              your financial goal.
+              <a class="description" href="#"
+                >Product helps you see how many more days you need to work to
+                reach your financial goal.</a
+              >
             </div>
             <div class="client">
               <img src="./assets/svg/client3.svg" alt="" class="client__logo" />
@@ -504,7 +503,7 @@
             the best energy deal.
           </p>
           <form name="text__form" action="" method="post">
-            <input class="e-mail" type="mail" placeholder="Email address" />
+            <input class="e-mail" type="mail" />
           </form>
           <button class="btn btn--success">Sign up Now</button>
         </div>
