@@ -24,53 +24,26 @@
   }
 }
 
-/*price*/
-.section--price {
-  padding: 25px 0px 22px;
+/*clients*/
+.section--clients {
+  padding: 100px 0px 117px;
 }
 
-.section--price .subtitle {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 36px;
-  text-transform: uppercase;
-  margin-bottom: 32px;
-  letter-spacing: 0.02em;
-}
-
-.section--price .title {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 60px;
+.section--clients .title {
   text-align: center;
-  margin: 0;
-  letter-spacing: 0.01em;
+  margin-bottom: 50px;
 }
 
-.section--price .description {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: center;
-  margin-bottom: 49px;
+.clients__logo {
+  display: flex;
+  justify-content: space-between;
 }
+
 
 /*media*/
-@media (max-width: 576px) {
-  .section--price .title {
-    margin-bottom: 15px;
-  }
+@media (max-width: 576px) {}
 
-  .section--price .subtitle {
-    margin-bottom: 11px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .section--price {
-    padding: 68px 0px 152px;
-  }
-}
+@media (min-width: 1200px) {}
 
 /*enterprice*/
 .section--enterprice {
