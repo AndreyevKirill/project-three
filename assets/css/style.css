@@ -1413,7 +1413,7 @@ input:checked+.menu__item--active {
     display: block;
   }
 
-  .profile:first-child {
+  .section--strategies .profile:first-child {
     margin-right: 15px;
   }
 }
