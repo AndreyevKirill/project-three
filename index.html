@@ -16,14 +16,14 @@
       <div class="container">
         <div class="header__left">
           <a href="#" class="logo">
-            <img src="./assets/svg/logo.svg" alt="image description" />
+            <img src="./assets/svg/logo.svg" alt="logo" />
           </a>
           <a href="#" class="logo__name">Product</a>
           <nav class="menu">
             <a class="menu__item menu__item--active" href="#">Product</a>
-            <a class="menu__item" href="#">Customers</a>
-            <a class="menu__item" href="#">Pricing</a>
-            <a class="menu__item" href="#">Resources</a>
+            <a class="menu__item" href="./customers.html">Customers</a>
+            <a class="menu__item" href="./pricing.html">Pricing</a>
+            <a class="menu__item" href="./resources.html">Resources</a>
           </nav>
         </div>
         <div class="header__right">
@@ -32,7 +32,7 @@
           <button class="btn btn--triger">
             <img src="./assets/svg/triger.svg" alt="image description" />
           </button>
-          <a class="menu-trigger menu-triger--active" href="#">
+          <a class="menu__trigger menu__trigger--active" href="#">
             <span></span>
             <span></span>
             <span></span>
@@ -64,16 +64,16 @@
     <section class="section section--product">
       <div class="container">
         <h2 class="title">Product was Built Specifically for You</h2>
-        <div class="table">
-          <div class="table__col">
-            <div class="col__item">
+        <div class="list">
+          <div class="list__item">
+            <div class="list__item_icon">
               <img src="assets/svg/icon1.svg" />
             </div>
             <h3 class="subtitle">First click tests</h3>
             <p class="description">While most people enjoy casino gambling,</p>
           </div>
-          <div class="table__col">
-            <div class="col__item">
+          <div class="list__item">
+            <div class="list__item_icon">
               <img src="assets/svg/icon2.svg" />
             </div>
             <h3 class="subtitle">Design surveys</h3>
@@ -81,15 +81,15 @@
               Sports betting, lottery and bingo playing for the fun
             </p>
           </div>
-          <div class="table__col">
-            <div class="col__item">
+          <div class="list__item">
+            <div class="list__item_icon">
               <img src="assets/svg/icon3.svg" />
             </div>
             <h3 class="subtitle">Preference tests</h3>
             <p class="description">The Myspace page defines the individual.</p>
           </div>
-          <div class="table__col">
-            <div class="col__item">
+          <div class="list__item">
+            <div class="list__item_icon">
               <img src="assets/svg/icon4.svg" />
             </div>
             <h3 class="subtitle">Five second tests</h3>
@@ -140,29 +140,20 @@
           </p>
           <div class="customer__wraper">
             <div class="customer__item">
-              <img
-                class="customer__icon customer__icon--yellow"
-                src="./assets/svg/ok.svg"
-              />
+              <img class="customer__icon" src="./assets/svg/ok.svg" />
               <p class="customer__description">
                 Never worry about overpaying for your<br />energy again.<br />
               </p>
             </div>
             <div class="customer__item">
-              <img
-                class="customer__icon customer__icon--red"
-                src="./assets/svg/ok.svg"
-              />
+              <img class="customer__icon" src="./assets/svg/ok.svg" />
               <p class="customer__description">
                 We will only switch you to energy companies that we trust and
                 will treat you right
               </p>
             </div>
             <div class="customer__item">
-              <img
-                class="customer__icon customer__icon--blue"
-                src="./assets/svg/ok.svg"
-              />
+              <img class="customer__icon" src="./assets/svg/ok.svg" />
               <p class="customer__description">
                 We track the markets daily and know where the savings are.
               </p>
@@ -207,27 +198,21 @@
           </p>
         </div>
         <div class="process__row">
-          <div class="row__left">
-            <div class="expert expert__left">
-              <img class="exp__pic" src="./assets/svg/expert1.svg" />
-              <div class="ability">I can take care of your pitch</div>
-              <img class="exp__oval" src="./assets/img/oval.png" />
-            </div>
-            <div class="expert expert__left">
-              <div class="ability">I can design you website</div>
-              <img class="exp__pic" src="./assets/svg/expert3.svg" />
-              <img class="exp__oval" src="./assets/img/oval.png" />
-            </div>
+          <div class="expert">
+            <img class="exp__pic" src="./assets/svg/expert1.svg" />
+            <div class="ability">I can take care of your pitch</div>
           </div>
-          <div class="row__right">
-            <div class="expert expert__right">
-              <div class="ability">I can prototype your app</div>
-              <img class="exp__pic" src="./assets/svg/expert2.svg" />
-            </div>
-            <div class="expert expert__right">
-              <img class="exp__pic" src="./assets/svg/expert4.svg" />
-              <div class="ability">I can help marketing strategy</div>
-            </div>
+          <div class="expert">
+            <div class="ability">I can prototype your app</div>
+            <img class="exp__pic" src="./assets/svg/expert2.svg" />
+          </div>
+          <div class="expert">
+            <div class="ability">I can design you website</div>
+            <img class="exp__pic" src="./assets/svg/expert3.svg" />
+          </div>
+          <div class="expert">
+            <img class="exp__pic" src="./assets/svg/expert4.svg" />
+            <div class="ability">I can help marketing strategy</div>
           </div>
         </div>
         <button class="btn btn--success">Contact our expert</button>
@@ -250,42 +235,48 @@
                   <div class="slider__slide-content">
                     <div class="slider__item-content">
                       <div class="content">
-                        <div class="profile">
-                          <img
-                            class="content--icon"
-                            src="./assets/img/strat1.png"
-                          />
-                          <p class="description description-autor">
-                            By <b>Wahid Ari</b> | 03 March 2019
-                          </p>
-                          <h2 class="comment">
-                            Increasing Prosperity With Positive Thinking
-                          </h2>
-                        </div>
-                        <div class="profile">
-                          <img
-                            class="content--icon"
-                            src="./assets/img/strat2.png"
-                          />
-                          <p class="description description-autor">
-                            By <b>Wahid Ari</b> | 03 March 2019
-                          </p>
-                          <h2 class="comment">
-                            Motivation Is The First Step To Success
-                          </h2>
-                        </div>
-                        <div class="profile">
-                          <img
-                            class="content--icon"
-                            src="./assets/img/strat3.png"
-                          />
-                          <p class="description description-autor">
-                            By <b>Wahid Ari</b> | 03 March 2019
-                          </p>
-                          <h2 class="comment">
-                            Success Steps For Your Personal Or Business
-                          </h2>
-                        </div>
+                        <a class="profile" href="#">
+                          <div class="profile__item">
+                            <img
+                              class="content--icon"
+                              src="./assets/img/strat1.png"
+                            />
+                            <p class="description description-autor">
+                              By <b>Wahid Ari</b> | 03 March 2019
+                            </p>
+                            <h2 class="comment">
+                              Increasing Prosperity With Positive Thinking
+                            </h2>
+                          </div>
+                        </a>
+                        <a class="profile" href="#">
+                          <div class="profile__item">
+                            <img
+                              class="content--icon"
+                              src="./assets/img/strat2.png"
+                            />
+                            <p class="description description-autor">
+                              By <b>Wahid Ari</b> | 03 March 2019
+                            </p>
+                            <h2 class="comment">
+                              Motivation Is The First Step To Success
+                            </h2>
+                          </div>
+                        </a>
+                        <a class="profile" href="#">
+                          <div class="profile__item">
+                            <img
+                              class="content--icon"
+                              src="./assets/img/strat3.png"
+                            />
+                            <p class="description description-autor">
+                              By <b>Wahid Ari</b> | 03 March 2019
+                            </p>
+                            <h2 class="comment">
+                              Success Steps For Your Personal Or Business
+                            </h2>
+                          </div>
+                        </a>
                       </div>
                     </div>
                   </div>
