@@ -16,30 +16,23 @@
       <div class="container">
         <div class="header__left">
           <a href="#" class="logo">
-            <img src="./assets/svg/logo.svg" alt="image description" />
+            <img src="./assets/svg/logo.svg" alt="logo" />
           </a>
           <a href="#" class="logo__name">Product</a>
           <nav class="menu">
             <a class="menu__item" href="./index.html">Product</a>
             <a class="menu__item" href="./customers.html">Customers</a>
-            <a class="menu__item menu__item--active" href="№">Pricing</a>
+            <a class="menu__item menu__item--active" href="#">Pricing</a>
             <a class="menu__item" href="./resources.html">Resources</a>
           </nav>
         </div>
         <div class="header__right">
           <button class="btn btn--outline-primary">Sign in</button>
           <button class="btn btn--success">Sign Up</button>
-          <div class="toggle-container">
-            <input type="checkbox" id="switch" />
-            <label for="switch">
-              <img
-                class="switch__icon"
-                src="./assets/svg/triger2.svg"
-                alt="image description"
-              />
-            </label>
-          </div>
-          <a class="menu-trigger menu-triger--active" href="#">
+          <button class="btn btn--triger">
+            <img src="./assets/svg/triger.svg" alt="image description" />
+          </button>
+          <a class="menu__trigger menu__trigger--active" href="#">
             <span></span>
             <span></span>
             <span></span>
@@ -54,57 +47,89 @@
         <p class="description">
           Prodict is your perfect solution for working. Get started now for free
         </p>
-        <div class="price__table">
-          <div class="price__table-col">
-            <h3 class="table-col-subtitle">Free</h3>
-            <p class="table-col-description">Brief price description</p>
-            <div class="price__information">
-              <img class="price__icon" src="./assets/svg/0.svg" />
-              <div class="price__information--content">
-                <div class="price__money">$</div>
-                <h2 class="price__month">Per / month</h2>
+        <div class="slider">
+          <div class="slider__view">
+            <div class="slider__portal">
+              <div class="slider__slide">
+                <div class="slider__slide-content">
+                  <div class="slider__item-content">
+                    <div class="content">
+                      <div class="price__table">
+                        <div class="price__table-col">
+                          <h3 class="table-col-subtitle">Free</h3>
+                          <p class="table-col-description">
+                            Brief price description
+                          </p>
+                          <div class="price__information">
+                            <img class="price__icon" src="./assets/svg/0.svg" />
+                            <div class="price__information--content">
+                              <div class="price__money">$</div>
+                              <h2 class="price__month">Per / month</h2>
+                            </div>
+                          </div>
+                          <div class="price__wraper">
+                            <p class="price__item">Only 2 Operators</p>
+                            <p class="price__item">Notifications</p>
+                            <p class="price__item">Landing Pages</p>
+                          </div>
+                          <button class="btn btn--success">Order Now</button>
+                        </div>
+                        <div class="price__table-col">
+                          <h3 class="table-col-subtitle">Standard</h3>
+                          <p class="table-col-description">
+                            Brief price description
+                          </p>
+                          <div class="price__information">
+                            <img class="price__icon" src="./assets/svg/5.svg" />
+                            <div class="price__information--content">
+                              <div class="price__money">$</div>
+                              <h2 class="price__month">Per / month</h2>
+                            </div>
+                          </div>
+                          <div class="price__wraper">
+                            <p class="price__item">5+ Operators</p>
+                            <p class="price__item">Notifications</p>
+                            <p class="price__item">Landing Pages</p>
+                          </div>
+                          <button class="btn btn--success">Order Now</button>
+                        </div>
+                        <div class="price__table-col">
+                          <h3 class="table-col-subtitle">Premium</h3>
+                          <p class="table-col-description">
+                            Brief price description
+                          </p>
+                          <div class="price__information">
+                            <img
+                              class="price__icon"
+                              src="./assets/svg/10.svg"
+                            />
+                            <div class="price__information--content">
+                              <div class="price__money">$</div>
+                              <h2 class="price__month">Per / month</h2>
+                            </div>
+                          </div>
+                          <div class="price__wraper">
+                            <p class="price__item">Only 3 Operators</p>
+                            <p class="price__item">Notifications</p>
+                            <p class="price__item">Landing Pages</p>
+                          </div>
+                          <button class="btn btn--success">Order Now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__nav">
+                <div class="slider__nav-left">
+                  <button
+                    class="slider__nav-item slider__nav-item--active"
+                  ></button>
+                  <button class="slider__nav-item"></button>
+                  <button class="slider__nav-item"></button>
+                </div>
               </div>
             </div>
-            <div class="price__wraper">
-              <p class="price__item">Only 2 Operators</p>
-              <p class="price__item">Notifications</p>
-              <p class="price__item">Landing Pages</p>
-            </div>
-            <button class="btn btn--success">Order Now</button>
-          </div>
-          <div class="price__table-col">
-            <h3 class="table-col-subtitle">Standard</h3>
-            <p class="table-col-description">Brief price description</p>
-            <div class="price__information">
-              <img class="price__icon" src="./assets/svg/5.svg" />
-              <div class="price__information--content">
-                <div class="price__money">$</div>
-                <h2 class="price__month">Per / month</h2>
-              </div>
-            </div>
-            <div class="price__wraper">
-              <p class="price__item">5+ Operators</p>
-              <p class="price__item">Notifications</p>
-              <p class="price__item">Landing Pages</p>
-            </div>
-            <button class="btn btn--success">Order Now</button>
-          </div>
-          <div class="price__table-col">
-            <h3 class="table-col-subtitle">Premium</h3>
-            <p class="table-col-description">Brief price description</p>
-            <div class="price__information">
-              <img class="price__icon" src="./assets/svg/10.svg" />
-              <div class="price__information--content">
-                <div class="price__money">$</div>
-                <h2 class="price__month">Per / month</h2>
-              </div>
-            </div>
-            <div class="price__wraper">
-              <p class="price__item">Only 3 Operators</p>
-              <p class="price__item">Notifications</p>
-              <p class="price__item">Landing Pages</p>
-            </div>
-            <button class="btn btn--success">Order Now</button>
           </div>
         </div>
       </div>
@@ -299,7 +324,7 @@
             knowing you're always on<br />
             the best energy deal.
           </p>
-          <form name="text__form" action="" method="post">
+          <form class="form__deal" name="text__form" action="" method="post">
             <input class="e-mail" type="mail" />
           </form>
           <button class="btn btn--success">Sign up Now</button>

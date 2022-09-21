@@ -16,7 +16,7 @@
       <div class="container">
         <div class="header__left">
           <a href="#" class="logo">
-            <img src="./assets/svg/logo.svg" alt="image description" />
+            <img src="./assets/svg/logo.svg" alt="logo" />
           </a>
           <a href="#" class="logo__name">Product</a>
           <nav class="menu">
@@ -29,17 +29,10 @@
         <div class="header__right">
           <button class="btn btn--outline-primary">Sign in</button>
           <button class="btn btn--success">Sign Up</button>
-          <div class="toggle-container">
-            <input type="checkbox" id="switch" />
-            <label for="switch">
-              <img
-                class="switch__icon"
-                src="./assets/svg/triger2.svg"
-                alt="image description"
-              />
-            </label>
-          </div>
-          <a class="menu-trigger menu-triger--active" href="#">
+          <button class="btn btn--triger">
+            <img src="./assets/svg/triger.svg" alt="image description" />
+          </button>
+          <a class="menu__trigger menu__trigger--active" href="#">
             <span></span>
             <span></span>
             <span></span>
@@ -51,50 +44,56 @@
       <div class="container">
         <h2 class="title">Our Clients</h2>
         <div class="clients__logo">
-          <div class="clients__logo_item">
+          <a class="clients__logo_item" href="https://www.airbnb.ru/">
             <img src="assets/img/clients1.png" />
-          </div>
-          <div class="clients__logo_item">
+          </a>
+          <a
+            class="clients__logo_item"
+            href="https://www.google.kz/?gws_rd=ssl"
+          >
             <img src="assets/img/clients2.png" />
-          </div>
-          <div class="clients__logo_item">
+          </a>
+          <a class="clients__logo_item" href="https://www.microsoft.com/ru-ru/">
             <img src="assets/img/clients3.png" />
-          </div>
-          <div class="clients__logo_item">
+          </a>
+          <a
+            class="clients__logo_item"
+            href="https://www.fedex.com/ru-ru/home.html"
+          >
             <img src="assets/img/clients4.png" />
-          </div>
+          </a>
         </div>
       </div>
     </section>
     <section class="section section--choose">
       <div class="container">
         <h2 class="title">Why Choose Product?</h2>
-        <div class="choose__table">
-          <div class="choose__table_item">
-            <div class="table_item--icon">
+        <div class="list">
+          <div class="list__item list__item-center">
+            <div class="item__icon item__icon-center">
               <img src="assets/svg/icon1.svg" />
             </div>
-            <h3 class="subtitule">Special Business</h3>
+            <h3 class="subtitle">Special Business</h3>
             <p class="description">
               Product helps you see how many more days you need to work to reach
               your financial goal for the month and year.
             </p>
           </div>
-          <div class="choose__table_item">
-            <div class="table_item--icon">
+          <div class="list__item list__item-center">
+            <div class="item__icon item__icon-center">
               <img src="assets/svg/icon2.svg" />
             </div>
-            <h3 class="subtitule">Instant Result</h3>
+            <h3 class="subtitle">Instant Result</h3>
             <p class="description">
               Product helps you see how many more days you need to work to reach
               your financial goal for the month and year.
             </p>
           </div>
-          <div class="choose__table_item">
-            <div class="table_item--icon">
+          <div class="list__item list__item-center">
+            <div class="item__icon item__icon-center">
               <img src="assets/svg/icon3.svg" />
             </div>
-            <h3 class="subtitule">Fastest way to organize</h3>
+            <h3 class="subtitle">Fastest way to organize</h3>
             <p class="description">
               Product helps you see how many more days you need to work to reach
               your financial goal for the month and year.
@@ -107,13 +106,13 @@
       <div class="container">
         <h2 class="title">How Product Work?</h2>
         <div class="how__row">
-          <div class="how__row_item">
-            <div class="how__row_pic">
-              <img class="pic how--pic" src="assets/img/how1.png" />
+          <div class="how__item">
+            <div class="how__left">
+              <img class="pic how-pic" src="assets/img/how1.png" />
             </div>
-            <div class="how__row_item_right">
+            <div class="how__right">
               <h3 class="subtitle subtitle--small">STEP 1</h3>
-              <h2 class="title title--small">Apply for a product</h2>
+              <h2 class="title--small">Apply for a product</h2>
               <p class="description">
                 Completing our easy step-by-step application form gives you
                 access to multiple business with multiple products. We analyse
@@ -121,13 +120,13 @@
               </p>
             </div>
           </div>
-          <div class="how__row_item">
-            <div class="how__row_pic">
-              <img class="pic how--pic" src="assets/img/how2.png" />
+          <div class="how__item">
+            <div class="how__left">
+              <img class="pic how-pic" src="assets/img/how2.png" />
             </div>
-            <div class="how__row_item_right">
+            <div class="how__right">
               <h3 class="subtitle subtitle--small">STEP 2</h3>
-              <h2 class="title title--small">Pay fully refundable</h2>
+              <h2 class="title--small">Pay fully refundable</h2>
               <p class="description">
                 Product will contactting you instantly to receive payment of the
                 Application Fee. if no offer of product is available, your fee
@@ -135,13 +134,13 @@
               </p>
             </div>
           </div>
-          <div class="how__row_item">
-            <div class="how__row_pic">
-              <img class="pic how--pic" src="assets/img/how3.png" />
+          <div class="how__item">
+            <div class="how__left">
+              <img class="pic how-pic" src="assets/img/how3.png" />
             </div>
-            <div class="how__row_item_right">
+            <div class="how__right">
               <h3 class="subtitle subtitle--small">STEP 3</h3>
-              <h2 class="title title--small">Completion</h2>
+              <h2 class="title--small">Completion</h2>
               <p class="description">
                 Product will continue to liase between borrower and manager to
                 procees and complete a quick and efficient settlement
@@ -264,7 +263,7 @@
             knowing you're always on<br />
             the best energy deal.
           </p>
-          <form name="text__form" action="" method="post">
+          <form class="form__deal" name="text__form" action="" method="post">
             <input class="e-mail" type="mail" />
           </form>
           <button class="btn btn--success">Sign up Now</button>
