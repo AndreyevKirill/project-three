@@ -1,4 +1,12 @@
-let theme = localStorage.getItem('data-theme');
+let theme = document.querySelector('.theme');
+let btntriger = document.querySelector('.btn--triger');
+
+btntriger.onclick = function() {
+    theme.classList.toggle('light');
+    theme.classList.toggle('dark');
+};
+
+/*let theme = localStorage.getItem('data-theme');
 const checkbox = document.getElementById("switch");
 const changeThemeToDark = () =>{
     document.documentElement.setAttribute("data-theme", "dark")
@@ -24,5 +32,5 @@ checkbox.addEventListener('change', ()=> {
         changeThemeToDark()
     }
    
-});
+});*/
 

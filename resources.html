@@ -16,30 +16,23 @@
       <div class="container">
         <div class="header__left">
           <a href="#" class="logo">
-            <img src="./assets/svg/logo.svg" alt="image description" />
+            <img src="./assets/svg/logo.svg" alt="logo" />
           </a>
           <a href="#" class="logo__name">Product</a>
           <nav class="menu">
-            <a class="menu__item" href="./index.html">Product</a>
+            <a class="menu__item menu__item--active" href="#">Product</a>
             <a class="menu__item" href="./customers.html">Customers</a>
             <a class="menu__item" href="./pricing.html">Pricing</a>
-            <a class="menu__item menu__item--active" href="#">Resources</a>
+            <a class="menu__item" href="./resources.html">Resources</a>
           </nav>
         </div>
         <div class="header__right">
           <button class="btn btn--outline-primary">Sign in</button>
           <button class="btn btn--success">Sign Up</button>
-          <div class="toggle-container">
-            <input type="checkbox" id="switch" />
-            <label for="switch">
-              <img
-                class="switch__icon"
-                src="./assets/svg/triger2.svg"
-                alt="image description"
-              />
-            </label>
-          </div>
-          <a class="menu-trigger menu-triger--active" href="#">
+          <button class="btn btn--triger">
+            <img src="./assets/svg/triger.svg" alt="image description" />
+          </button>
+          <a class="menu__trigger menu__trigger--active" href="#">
             <span></span>
             <span></span>
             <span></span>
@@ -55,7 +48,7 @@
             Build better customer relationships easily messaging that provides a
             more personal experience for you and your customers.
           </p>
-          <div class="email__adress">
+          <label class="email__adress">
             <form class="email__adress-form">
               <input
                 class="email--adress-text"
@@ -64,7 +57,7 @@
               />
             </form>
             <button class="btn btn--success">Join Now</button>
-          </div>
+          </label>
           <div class="business__join">
             <img
               class="business__join--icon"
@@ -93,57 +86,73 @@
           </p>
         </div>
         <div class="content">
-          <div class="profile">
-            <img class="content--icon" src="./assets/img/strat1.png" />
-            <p class="description description-autor">
-              By <b>Wahid Ari</b> | 03 March 2019
-            </p>
-            <h2 class="comment">
-              Increasing Prosperity With Positive Thinking
-            </h2>
-          </div>
-          <div class="profile">
-            <img class="content--icon" src="./assets/img/stories2.png" />
-            <p class="description description-autor">
-              By <b>Wahid Ari</b> | 03 March 2019
-            </p>
-            <h2 class="comment">Motivation Is The First Step To Success</h2>
-          </div>
-          <div class="profile">
-            <img class="content--icon" src="./assets/img/stories3.png" />
-            <p class="description description-autor">
-              By <b>Wahid Ari</b> | 03 March 2019
-            </p>
-            <h2 class="comment">Success Steps For Your Personal Or Business</h2>
-          </div>
-          <div class="profile">
-            <img class="content--icon" src="./assets/img/stories4.png" />
-            <p class="description description-autor">
-              By <b>Wahid Ari</b> | 03 March 2019
-            </p>
-            <h2 class="comment">
-              Increasing Prosperity With Positive Thinking
-            </h2>
-          </div>
-          <div class="profile">
-            <img class="content--icon" src="./assets/img/stories5.png" />
-            <p class="description description-autor">
-              By <b>Wahid Ari</b> | 03 March 2019
-            </p>
-            <h2 class="comment">Motivation Is The First Step To Success</h2>
-          </div>
-          <div class="profile">
-            <img class="content--icon" src="./assets/img/stories6.png" />
-            <p class="description description-autor">
-              By <b>Wahid Ari</b> | 03 March 2019
-            </p>
-            <h2 class="comment">Success Steps For Your Personal Or Business</h2>
-          </div>
+          <a class="profile" href="#">
+            <div class="profile__item">
+              <img class="content--icon" src="./assets/img/strat1.png" />
+              <p class="description description-autor">
+                By <b>Wahid Ari</b> | 03 March 2019
+              </p>
+              <h2 class="comment">
+                Increasing Prosperity With Positive Thinking
+              </h2>
+            </div>
+          </a>
+          <a class="profile" href="#">
+            <div class="profile__item">
+              <img class="content--icon" src="./assets/img/stories2.png" />
+              <p class="description description-autor">
+                By <b>Wahid Ari</b> | 03 March 2019
+              </p>
+              <h2 class="comment">Motivation Is The First Step To Success</h2>
+            </div>
+          </a>
+          <a class="profile" href="#">
+            <div class="profile__item">
+              <img class="content--icon" src="./assets/img/stories3.png" />
+              <p class="description description-autor">
+                By <b>Wahid Ari</b> | 03 March 2019
+              </p>
+              <h2 class="comment">
+                Success Steps For Your Personal Or Business
+              </h2>
+            </div>
+          </a>
+          <a class="profile" href="#">
+            <div class="profile__item">
+              <img class="content--icon" src="./assets/img/stories4.png" />
+              <p class="description description-autor">
+                By <b>Wahid Ari</b> | 03 March 2019
+              </p>
+              <h2 class="comment">
+                Increasing Prosperity With Positive Thinking
+              </h2>
+            </div>
+          </a>
+          <a class="profile" href="#">
+            <div class="profile__item">
+              <img class="content--icon" src="./assets/img/stories5.png" />
+              <p class="description description-autor">
+                By <b>Wahid Ari</b> | 03 March 2019
+              </p>
+              <h2 class="comment">Motivation Is The First Step To Success</h2>
+            </div>
+          </a>
+          <a class="profile" href="#">
+            <div class="profile__item">
+              <img class="content--icon" src="./assets/img/stories6.png" />
+              <p class="description description-autor">
+                By <b>Wahid Ari</b> | 03 March 2019
+              </p>
+              <h2 class="comment">
+                Success Steps For Your Personal Or Business
+              </h2>
+            </div>
+          </a>
         </div>
-        <div class="more">
+        <button class="btn btn--light">
           <p class="description">More Stories</p>
           <img class="more--icon" src="./assets/svg/circle_right.svg" />
-        </div>
+        </button>
       </div>
     </section>
     <section class="section section--contact">
@@ -261,7 +270,7 @@
             knowing you're always on<br />
             the best energy deal.
           </p>
-          <form name="text__form" action="" method="post">
+          <form class="form__deal" name="text__form" action="" method="post">
             <input class="e-mail" type="mail" />
           </form>
           <button class="btn btn--success">Sign up Now</button>
