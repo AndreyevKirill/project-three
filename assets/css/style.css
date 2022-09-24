@@ -148,7 +148,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(./assets/svg/triger.svg) no-repeat;
+  background: url(../svg/triger.svg) no-repeat;
   background-size: contain;
   border: 5px solid #f3f3f3;
   margin-right: 5px;
@@ -2376,7 +2376,6 @@ h6 {
 .clients__logo_item {
   margin: 0;
 }
-}
 
 /*choose*/
 .section--choose {
@@ -2604,7 +2603,6 @@ h6 {
 
 .how-pic {
   max-width: fit-content;
-}
 }
 
 /*offers*/
