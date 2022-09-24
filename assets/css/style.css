@@ -1,4 +1,4 @@
-html[data-theme="light"] {
+html[theme="light"] {
   --bg: #ffffff;
   --switch-color: #02897a;
   --color-heading: #22343d;
@@ -10,7 +10,7 @@ html[data-theme="light"] {
   --border: #dedede;
 }
 
-html[data-theme="dark"] {
+html[theme="dark"] {
   --bg: #1f2e35;
   --switch-color: #0077ff;
   --color-heading: #ffffff;
@@ -26,6 +26,14 @@ html[data-theme="dark"] {
 body {
   background-color: var(--bg);
   /*  --font-color: #22343d;*/
+}
+
+.light {
+  background-color: var(--bg);
+}
+
+.dark {
+  background-color: #1f2e35;
 }
 
 @font-face {
@@ -126,7 +134,6 @@ h6 {
   color: #ffffff;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-
 .btn--light {
   border: none;
   background-color: transparent;
@@ -185,7 +192,8 @@ h6 {
 }
 
 .btn-outline-success:hover img {
-  filter: brightness(0) saturate(100%) invert(34%) sepia(10%) saturate(4720%) hue-rotate(130deg) brightness(96%) contrast(95%);
+  filter: brightness(0) saturate(100%) invert(34%) sepia(10%) saturate(4720%)
+    hue-rotate(130deg) brightness(96%) contrast(95%);
 }
 
 .w-100 {
@@ -200,7 +208,6 @@ h6 {
   display: flex;
   justify-content: center;
 }
-
 
 /*Header*/
 .header {
@@ -274,7 +281,8 @@ h6 {
 
 .menu__item:hover {
   font-weight: 700;
-  filter: brightness(0) saturate(100%) invert(31%) sepia(77%) saturate(487%) hue-rotate(124deg) brightness(95%) contrast(97%);
+  filter: brightness(0) saturate(100%) invert(31%) sepia(77%) saturate(487%)
+    hue-rotate(124deg) brightness(95%) contrast(97%);
 }
 
 .header__right {
@@ -362,7 +370,8 @@ h6 {
   }
 }
 
-@media (min-width: 1400px) {}
+@media (min-width: 1400px) {
+}
 
 /*Hero*/
 .section--hero .container {
@@ -865,7 +874,8 @@ h6 {
   }
 }
 
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+}
 
 @media (min-width: 768px) {
   .customer--pic {
@@ -974,7 +984,8 @@ h6 {
   }
 }
 
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+}
 
 @media (min-width: 768px) {
   .section--collaborative {
@@ -1154,9 +1165,11 @@ h6 {
   }
 }
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+}
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+}
 
 /*strategies*/
 .section--strategies .title {
@@ -1291,11 +1304,9 @@ h6 {
   .content {
     justify-content: center;
   }
-
   .section--strategies .slider__nav-left {
     display: flex;
   }
-
   .section--strategies .profile:nth-of-type(2),
   .section--strategies .profile:nth-of-type(3) {
     display: none;
@@ -1329,16 +1340,13 @@ h6 {
     flex-direction: row;
     justify-content: space-between;
   }
-
   .profile {
     margin: 0;
   }
-
   .section--strategies .profile:nth-of-type(2),
   .section--strategies .profile:nth-of-type(3) {
     display: flex;
   }
-
   .profile:last-child {
     margin-bottom: 0px;
   }
@@ -1404,7 +1412,8 @@ h6 {
 }
 
 .price__table-col:hover .price__icon {
-  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7467%) hue-rotate(292deg) brightness(101%) contrast(99%);
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7467%)
+    hue-rotate(292deg) brightness(101%) contrast(99%);
 }
 
 .price__table-col:hover .price__money {
@@ -1491,11 +1500,9 @@ h6 {
   .section--price {
     padding: 0px;
   }
-
   .section--price .title {
     font-size: 36px;
   }
-
   .price__table {
     margin: auto;
   }
@@ -1513,7 +1520,6 @@ h6 {
     text-align: center;
   }
 }
-
 @media (min-width: 576px) {
   .section--price {
     padding: 20px 0px 0px;
@@ -1553,11 +1559,9 @@ h6 {
   .price__table-col {
     margin: 0;
   }
-
   .price__table-col:not(:last-child) {
     margin-bottom: 0px;
   }
-
   /*  .price__table-col:nth-of-type(3) {
     display: flex;
   }*/
@@ -1603,11 +1607,9 @@ h6 {
   padding: 28px 0px 20px 25px;
   background: #ffffff;
 }
-
 .collumn__item:not(:last-child) {
   margin-bottom: 20px;
 }
-
 .section--say .item__icon {
   margin-bottom: 10px;
 }
@@ -1691,11 +1693,9 @@ h6 {
     justify-content: space-between;
     flex-direction: row;
   }
-
   .collumn__item:not(:last-child) {
     margin-bottom: 0px;
   }
-
   /*  .collumn__item:nth-of-type(3) {
     display: block;
   }
@@ -1878,7 +1878,8 @@ h6 {
 }
 
 .social:hover .social__icon {
-  filter: brightness(0) saturate(100%) invert(96%) sepia(4%) saturate(0%) hue-rotate(325deg) brightness(105%) contrast(104%);
+  filter: brightness(0) saturate(100%) invert(96%) sepia(4%) saturate(0%)
+    hue-rotate(325deg) brightness(105%) contrast(104%);
 }
 
 .footer__nav {
@@ -2035,9 +2036,10 @@ h6 {
 }
 
 /*media*/
-@media (min-width: 576px) {}
-
-@media (min-width: 1200px) {}
+@media (min-width: 576px) {
+}
+@media (min-width: 1200px) {
+}
 
 /*pricing*/
 .section--pricing {
@@ -2069,15 +2071,12 @@ h6 {
   text-align: center;
   margin-bottom: 49px;
 }
-
 .section--pricing .price__information {
   margin-bottom: 39px;
 }
-
 .section--pricing .price__wraper {
   margin-bottom: 24px;
 }
-
 /*media*/
 @media (max-width: 576px) {
   .section--pricing .title {
@@ -2302,7 +2301,6 @@ h6 {
 .questions__item:nth-of-type(4) {
   padding-top: 16px;
 }
-
 .questions__icon-wraper {
   margin-right: 18px;
   align-self: baseline;
@@ -2392,7 +2390,8 @@ h6 {
 }
 
 /*media*/
-@media (max-width: 576px) {}
+@media (max-width: 576px) {
+}
 
 @media (min-width: 1200px) {
   .section--clients {
@@ -2485,7 +2484,6 @@ h6 {
 
 /*media*/
 @media (min-width: 576px) {
-
   .list__item-center:nth-of-type(2),
   .list__item-center:nth-of-type(3) {
     display: none;
@@ -2609,7 +2607,8 @@ h6 {
 }
 
 /*media*/
-@media (max-width: 576px) {}
+@media (max-width: 576px) {
+}
 
 @media (min-width: 1200px) {
   .section--how {
@@ -2963,19 +2962,17 @@ h6 {
 .btn--light .description {
   margin-right: 8px;
 }
-
 .btn--light:hover {
   background-color: #efefef;
 }
-
 .btn--light:hover .more--icon {
   cursor: pointer;
-  filter: brightness(0) saturate(100%) invert(33%) sepia(63%) saturate(7124%) hue-rotate(163deg) brightness(98%) contrast(98%);
+  filter: brightness(0) saturate(100%) invert(33%) sepia(63%) saturate(7124%)
+    hue-rotate(163deg) brightness(98%) contrast(98%);
 }
 
 /*stories*/
 @media (min-width: 576px) {
-
   .section--stories .profile:nth-of-type(2),
   .section--stories .profile:nth-of-type(3) {
     display: block;
@@ -3133,11 +3130,9 @@ h6 {
   .section--contact .subtitle {
     width: 332px;
   }
-
   .form__send {
     border: 1px solid #dddddd;
   }
-
   .form__send-text {
     width: 745px;
     padding-left: 19px;

@@ -1,9 +1,9 @@
-let theme = document.querySelector('.theme');
-let btntriger = document.querySelector('.btn--triger');
+let theme = document.querySelector(".theme");
+let btntriger = document.querySelector(".btn--triger");
 
-btntriger.onclick = function() {
-    theme.classList.toggle('light');
-    theme.classList.toggle('dark');
+btntriger.onclick = function () {
+  theme.classList.toggle("light");
+  theme.classList.toggle("dark");
 };
 
 /*let theme = localStorage.getItem('data-theme');
@@ -17,7 +17,6 @@ const changeThemeToDark = () =>{
 const changeThemeToLight = () =>{
     document.documentElement.setAttribute("data-theme", "light")
     localStorage.setItem("data-theme", 'light')
-    console.log("I give you light")
 }
 
 if(theme === 'dark'){
@@ -32,5 +31,17 @@ checkbox.addEventListener('change', ()=> {
         changeThemeToDark()
     }
    
-});*/
+})*/
 
+/*
+let theme = document.querySelector('.theme');
+let btntriger = document.querySelector('.btn--triger');
+
+btntriger.onclick = function() {
+     theme.classList.toggle('light');
+    theme.classList.toggle('dark');
+};
+*/
+/*document.querySelector('.page').classList.add('light-theme');
+document.querySelector('.page').classList.remove('light-theme');
+*/
