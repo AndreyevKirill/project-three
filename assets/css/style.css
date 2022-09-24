@@ -1,5 +1,4 @@
-/* TODO: html просто по тегу (по умолчанию) */
-html[theme="light"] {
+html {
   --bg: #ffffff;
   --switch-color: #02897a;
   --color-heading: #22343d;
@@ -24,12 +23,6 @@ html[theme="dark"] {
 }
 
 /*основные стили*/
-/* TODO: Дубль с body ниже */
-body {
-  background-color: var(--bg);
-  /*  --font-color: #22343d;*/
-}
-
 .light {
   background-color: var(--bg);
 }
@@ -48,7 +41,7 @@ body {
 html,
 body {
   font-family: "Poppins", "Arial", sans-serif;
-  /*  color: var(--font-color);*/
+  background-color: var(--bg);
 }
 
 h1,
@@ -81,12 +74,10 @@ h6 {
   color: var(--color-text);
 }
 
-/* TODO: сделай просто класс space--bottom-12 */
-.subtitle--spacebottom {
+.space--bottom-12 {
   margin-bottom: 12px;
 }
 
-/* TODO: Если это стандартные стили для всех шрифтов на странице нужно перенести в body */
 .description {
   font-weight: 400;
   font-size: 18px;
@@ -149,11 +140,9 @@ h6 {
   border-radius: 4px;
 }
 
-/* TODO: border указан дважды */
 .btn--triger {
   background: #f3f3f3;
   border-radius: 100px;
-  border: #f3f3f3;
   width: 32px;
   height: 32px;
   display: flex;
@@ -161,12 +150,11 @@ h6 {
   justify-content: center;
   background: url(./assets/svg/triger.svg) no-repeat;
   background-size: contain;
-  border: 5px solid #ffffff;
+  border: 5px solid #f3f3f3;
   margin-right: 5px;
 }
 
-/* TODO: Никогда не объеденяй модификаторы должно быть так .btn--outline.btn--primary */
-.btn--outline-primary {
+.btn--outline.btn--primary {
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
@@ -179,15 +167,13 @@ h6 {
   letter-spacing: 0.02em;
 }
 
-/* TODO: Никогда не объеденяй модификаторы должно быть так .btn--outline.btn--primary:hover */
-.btn--outline-primary:hover {
+.btn--outline.btn--primary:hover {
   background-color: #fefefe;
   color: #067266;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-/* TODO: Никогда не объеденяй модификаторы должно быть так .btn--outline.btn--success */
-.btn-outline-success {
+.btn--outline.btn--success {
   background-color: transparent;
   border: transparent;
   font-weight: 600;
@@ -196,20 +182,13 @@ h6 {
   color: #02897a;
 }
 
-/* TODO: Никогда не объеденяй модификаторы должно быть так .btn--outline.btn--success:hover */
-.btn-outline-success:hover {
+.btn--outline.btn--success:hover {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 5px;
 }
 
-/* TODO: Никогда не объеденяй модификаторы должно быть так .btn--outline.btn--success img */
-.btn-outline-success:hover img {
+.btn--outline.btn--success:hover img {
   filter: brightness(0) saturate(100%) invert(34%) sepia(10%) saturate(4720%) hue-rotate(130deg) brightness(96%) contrast(95%);
-}
-
-/* TODO: этому классу не место среди классов относящихся к кнопке' */
-.w-100 {
-  width: 174px;
 }
 
 .btn-lg {
@@ -219,6 +198,10 @@ h6 {
 .btn--group {
   display: flex;
   justify-content: center;
+}
+
+.w-174 {
+  width: 174px;
 }
 
 /*Header*/
@@ -278,7 +261,6 @@ h6 {
   left: 0;
 }
 
-/* TODO: background дублируется */
 .menu__item:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
@@ -385,11 +367,9 @@ h6 {
 @media (min-width: 1400px) {}
 
 /*Hero*/
-/* TODO: дубль */
 .section--hero .container {
   display: flex;
   max-width: 1080px;
-  flex-direction: column;
   align-items: center;
   flex-direction: column-reverse;
 }
@@ -434,7 +414,7 @@ h6 {
   margin-right: 8px;
 }
 
-.btn__description {
+.btn--with-icon span {
   /* TODO: ширина и высота кнопки не должна регулироваться паддингами высота зависит от модификатора а ширина от содержимого либо от свойства width */
   padding: 18px 15px 13px 0px;
   letter-spacing: 0.02em;
@@ -488,8 +468,6 @@ h6 {
   }
 
   .section--hero .container {
-    /* TODO: flex-direction указан дважды */
-    flex-direction: column;
     align-items: center;
     flex-direction: row;
   }
@@ -595,12 +573,10 @@ h6 {
   margin-bottom: 30px;
 }
 
-/* TODO: дубль правил */
 .section--product .subtitle {
   font-weight: 600;
   font-size: 22px;
   line-height: 33px;
-  margin-bottom: 0px;
   letter-spacing: 0.02em;
   margin-bottom: -2px;
 }
@@ -1603,15 +1579,12 @@ h6 {
   letter-spacing: 0.02em;
 }
 
-/* TODO: дубль правил */
 .section--say .subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 28px;
   letter-spacing: 0.3px;
-  width: auto;
-  margin: auto;
-  margin-bottom: 50px;
+  margin: 0 auto 50px;
 }
 
 .say__row {
@@ -1683,25 +1656,6 @@ h6 {
     margin: auto;
     width: auto;
   }
-}
-
-/* TODO: мертвый код - удалить */
-@media (min-width: 576px) {
-  /* .collumn__item:nth-of-type(2),
-  .collumn__item:nth-of-type(3) {
-    display: none;
-  }*/
-}
-
-/* TODO: мертвый код - удалить */
-@media (min-width: 768px) {
-  /*  .collumn__item:nth-of-type(2) {
-    display: block;
-  }
-*/
-  /*  .collumn__item:not(:last-child) {
-    margin-right: 20px;
-  }*/
 }
 
 @media (min-width: 1200px) {
@@ -1783,8 +1737,6 @@ h6 {
 .join--pic {
   position: relative;
   left: 10px;
-  /* TODO: не правильное использвание правила */
-  max-width: -webkit-fill-available;
 }
 
 /*media join*/
@@ -1841,12 +1793,10 @@ h6 {
   align-items: center;
 }
 
-/* TODO: дубль правил */
 .footer__left {
   display: flex;
   flex-direction: column;
-  margin: auto;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
 }
 
 .footer .logo {
@@ -1905,13 +1855,11 @@ h6 {
   filter: brightness(0) saturate(100%) invert(96%) sepia(4%) saturate(0%) hue-rotate(325deg) brightness(105%) contrast(104%);
 }
 
-/* TODO: дубль правил */
 .footer__nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: auto;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
 }
 
 .footer__nav-col {
@@ -1920,10 +1868,8 @@ h6 {
   align-items: center;
 }
 
-/* TODO: дубль правил */
 .footer__nav-col:not(:last-child) {
-  margin: auto;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
 }
 
 .menu--footer-subtitle {
@@ -1949,11 +1895,9 @@ h6 {
   line-height: 30px;
 }
 
-/* TODO: дубль правил */
 .footer__deal {
-  margin: auto;
+  margin: 0 auto 44px;
   text-align: center;
-  margin-bottom: 44px;
 }
 
 .footer .subtitle {
@@ -2415,10 +2359,6 @@ h6 {
 }
 
 /*media*/
-
-/* TODO: мертвый код - удалить */
-@media (max-width: 576px) {}
-
 .section--clients {
   padding: 119px 0px 126px;
 }
@@ -2673,15 +2613,13 @@ h6 {
   background: linear-gradient(180deg, #f5f5f5 0%, rgba(245, 245, 245, 0) 100%);
 }
 
-/* TODO: дубль правил */
 .section--offers .title {
   font-weight: 700;
   font-size: 32px;
   line-height: 48px;
   text-align: center;
   max-width: 537px;
-  margin: auto;
-  margin-bottom: 35px;
+  margin: 0 auto 35px;
 }
 
 .offers__table {
@@ -2874,16 +2812,13 @@ h6 {
 @media (min-width: 576px) {
   .section--business .description {
     max-width: 516px;
-    margin: auto;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
   }
 
-  /* TODO: дубль правил */
   .email__adress {
     width: 469px;
     flex-direction: row;
-    margin: auto;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
   }
 
   .business__join {
@@ -2905,19 +2840,15 @@ h6 {
     margin-bottom: 24px;
   }
 
-  /* TODO: дубль правил */
   .section--business .description {
     text-align: start;
-    margin: unset;
-    margin-bottom: 23px;
+    margin: 0 0 23px;
   }
 
-  /* TODO: дубль правил */
   .email__adress {
     width: 468px;
     flex-direction: row;
-    margin: unset;
-    margin-bottom: 20px;
+    margin: 0 0 20px;
   }
 
   .email__adress-form {
@@ -2969,10 +2900,8 @@ h6 {
   justify-content: space-between;
 }
 
-/* TODO: дубль правил */
 .section--stories .profile {
-  margin: 0;
-  margin-bottom: 33px;
+  margin: 0 0 33px;
   border: 1px solid #dedede;
   border-radius: 8px;
 }
@@ -3009,10 +2938,7 @@ h6 {
 }
 
 @media (min-width: 1200px) {
-
-  /* TODO: дубль правил */
   .section--stories {
-    padding: 0px 0px 50px;
     padding: 0px 0px 15px;
   }
 }
@@ -3038,9 +2964,7 @@ h6 {
   text-align: center;
   letter-spacing: 0.2px;
   max-width: 100%;
-  /* TODO: дубль правил */
-  margin: auto;
-  margin-bottom: 64px;
+  margin: 0 auto 64px;
 }
 
 .section--contact .socials {
@@ -3093,9 +3017,7 @@ h6 {
   border: 1px solid #e8e8e8;
   border-radius: 39px;
   display: flex;
-  /* TODO: дубль правил */
-  margin: auto;
-  margin-bottom: 48px;
+  margin: 0 auto 48px;
   letter-spacing: -0.05em;
   font-size: 15px;
   width: -webkit-fill-available;
@@ -3108,9 +3030,7 @@ h6 {
   border: 1px solid #e8e8e8;
   border-radius: 39px;
   display: flex;
-  /* TODO: дубль правил */
-  margin: auto;
-  margin-bottom: 45px;
+  margin: 0 auto 45px;
   letter-spacing: -0.05em;
   font-size: 15px;
   width: -webkit-fill-available;
@@ -3119,9 +3039,7 @@ h6 {
 .form__send-message {
   height: 171px;
   padding: 15px 0 0 15px;
-  /* TODO: дубль правил */
-  margin: auto;
-  margin-bottom: 45px;
+  margin: 0 auto 45px;
   background: #f5f5f5;
   border: 1px solid #e8e8e8;
   display: flex;
@@ -3148,15 +3066,6 @@ h6 {
 }
 
 /*media*/
-/* TODO: мертвый код - удалить */
-@media (min-width: 576px) {
-  /*  .form__send-text,
-  .form__send-email,
-  .form__send-message {
-    width: 350px;
-  }*/
-}
-
 @media (min-width: 1200px) {
   .section--contact {
     padding: 125px 0px 28px;
