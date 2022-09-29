@@ -1,4 +1,5 @@
-html {
+/*основные стили*/
+.light {
   --bg: #ffffff;
   --switch-color: #02897a;
   --color-heading: #22343d;
@@ -10,7 +11,7 @@ html {
   --border: #dedede;
 }
 
-html[theme="dark"] {
+.dark {
   --bg: #1f2e35;
   --switch-color: #0077ff;
   --color-heading: #ffffff;
@@ -20,15 +21,6 @@ html[theme="dark"] {
   --bg-image--product: url(../img/product_dark.png);
   --bg-image--process: url(../img/process_dark.png);
   --border: #173a56;
-}
-
-/*основные стили*/
-.light {
-  background-color: var(--bg);
-}
-
-.dark {
-  background-color: #1f2e35;
 }
 
 @font-face {
@@ -108,7 +100,6 @@ h6 {
   color: #ffffff;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-
 .btn--outline {
   font-weight: 600;
   font-size: 16px;
@@ -116,11 +107,9 @@ h6 {
   border: none;
   background-color: transparent;
 }
-
 .btn--outline:hover {
   background-color: #f1f0ee;
 }
-
 .btn--light {
   border: none;
   background-color: transparent;
@@ -179,7 +168,8 @@ h6 {
 }
 
 .btn--outline.btn--success:hover img {
-  filter: brightness(0) saturate(100%) invert(34%) sepia(10%) saturate(4720%) hue-rotate(130deg) brightness(96%) contrast(95%);
+  filter: brightness(0) saturate(100%) invert(34%) sepia(10%) saturate(4720%)
+    hue-rotate(130deg) brightness(96%) contrast(95%);
 }
 
 .btn-lg {
@@ -194,12 +184,10 @@ h6 {
 .w-174 {
   width: 174px;
 }
-
 .btn--with-icon {
   padding: 3px 0px 0px 0px;
   display: flex;
 }
-
 /*Header*/
 .header {
   padding: 19px 0px 0px;
@@ -272,7 +260,8 @@ h6 {
 
 .menu__item:hover {
   font-weight: 700;
-  filter: brightness(0) saturate(100%) invert(31%) sepia(77%) saturate(487%) hue-rotate(124deg) brightness(95%) contrast(97%);
+  filter: brightness(0) saturate(100%) invert(31%) sepia(77%) saturate(487%)
+    hue-rotate(124deg) brightness(95%) contrast(97%);
 }
 
 .header__right {
@@ -328,7 +317,6 @@ h6 {
   .btn--outline.btn--primary {
     display: block;
   }
-
   .header .btn--success {
     display: block;
   }
@@ -360,7 +348,8 @@ h6 {
   }
 }
 
-@media (min-width: 1400px) {}
+@media (min-width: 1400px) {
+}
 
 /*Hero*/
 .section--hero .container {
@@ -409,11 +398,9 @@ h6 {
 .btn-outline-success img {
   margin-right: 8px;
 }
-
 .btn--with-icon img {
   margin-right: 9px;
 }
-
 .btn--with-icon span {
   /* TODO: ширина и высота кнопки не должна регулироваться паддингами высота зависит от модификатора а ширина от содержимого либо от свойства width */
   /*  padding: 18px 15px 13px 5px;*/
@@ -730,7 +717,6 @@ h6 {
     top: 0;
     margin-bottom: 20px;
   }
-
   .pic {
     margin: 0 auto;
     display: flex;
@@ -742,7 +728,6 @@ h6 {
   .man__right {
     padding: 20px 0px 20px 0px;
   }
-
   .section--managment .pic {
     max-width: 25em;
   }
@@ -779,11 +764,9 @@ h6 {
     align-items: start;
     margin: 0;
   }
-
   .section--managment .description {
     text-align: left;
   }
-
   .man__right {
     position: relative;
     left: 111px;
@@ -796,7 +779,6 @@ h6 {
     max-width: 100%;
   }
 }
-
 /*customer*/
 .section--customer .container {
   display: flex;
@@ -888,7 +870,6 @@ h6 {
     max-width: 25em;
   }
 }
-
 @media (min-width: 768px) {
   .customer--pic {
     margin-bottom: 40px;
@@ -925,11 +906,9 @@ h6 {
   .customer__pic {
     margin-bottom: 0px;
   }
-
   .section--customer .pic {
     max-width: 100%;
   }
-
   .customer__right {
     align-items: start;
     margin: 0;
@@ -1051,7 +1030,6 @@ h6 {
     top: -21px;
     margin: 0;
   }
-
   .section--collaborative .pic {
     max-width: 100%;
   }
@@ -1107,11 +1085,6 @@ h6 {
   align-items: center;
   justify-content: center;
   position: relative;
-}
-
-.expert:nth-of-type(1),
-.expert:nth-of-type(2) {
-  margin-bottom: 20px;
 }
 
 .expert:nth-of-type(1) .exp__pic {
@@ -1188,9 +1161,12 @@ h6 {
   }
 }
 
-@media (min-width: 768px) {}
-
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+  .expert:nth-of-type(1),
+  .expert:nth-of-type(2) {
+    margin-bottom: 20px;
+  }
+}
 
 /*strategies*/
 .section--strategies .title {
@@ -1337,11 +1313,9 @@ h6 {
   .profile:last-child {
     margin-bottom: 20px;
   }
-
   .section--strategies .content {
     flex-direction: row;
   }
-
   .section--strategies .profile:nth-of-type(2) {
     display: block;
   }
@@ -1443,7 +1417,8 @@ h6 {
 }
 
 .price__table-col:hover .price__icon {
-  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7467%) hue-rotate(292deg) brightness(101%) contrast(99%);
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7467%)
+    hue-rotate(292deg) brightness(101%) contrast(99%);
 }
 
 .price__table-col:hover .price__money {
@@ -1557,7 +1532,6 @@ h6 {
   .section--price {
     padding: 20px 0px 0px;
   }
-
   .price__table {
     flex-direction: row;
     justify-content: space-around;
@@ -1567,7 +1541,6 @@ h6 {
   .price__table-col:not(:last-child) {
     margin-bottom: 20px;
   }
-
   .price__table-col {
     max-width: 323px;
     width: 100%;
@@ -1697,7 +1670,6 @@ h6 {
     width: auto;
   }
 }
-
 @media (min-width: 768px) {
   .say__row {
     justify-content: space-around;
@@ -1705,13 +1677,11 @@ h6 {
     flex-wrap: wrap;
   }
 }
-
 @media (min-width: 992px) {
   .collumn__item:not(:last-child) {
     margin-bottom: 0px;
   }
 }
-
 @media (min-width: 1200px) {
   .section--say {
     padding: 0px 0px 20px;
@@ -1906,7 +1876,8 @@ h6 {
 }
 
 .social:hover .social__icon {
-  filter: brightness(0) saturate(100%) invert(96%) sepia(4%) saturate(0%) hue-rotate(325deg) brightness(105%) contrast(104%);
+  filter: brightness(0) saturate(100%) invert(96%) sepia(4%) saturate(0%)
+    hue-rotate(325deg) brightness(105%) contrast(104%);
 }
 
 .footer__nav {
@@ -2606,7 +2577,6 @@ h6 {
   .section--how {
     padding: 101px 0px 112px;
   }
-
   .how__item {
     flex-direction: row;
   }
@@ -2636,7 +2606,6 @@ h6 {
     max-width: fit-content;
   }
 }
-
 /*offers*/
 .section--offers {
   padding: 37px 0px 0px;
@@ -2955,12 +2924,12 @@ h6 {
 
 .btn--light:hover .more--icon {
   cursor: pointer;
-  filter: brightness(0) saturate(100%) invert(33%) sepia(63%) saturate(7124%) hue-rotate(163deg) brightness(98%) contrast(98%);
+  filter: brightness(0) saturate(100%) invert(33%) sepia(63%) saturate(7124%)
+    hue-rotate(163deg) brightness(98%) contrast(98%);
 }
 
 /*media stories*/
 @media (min-width: 576px) {
-
   .section--stories .profile:nth-of-type(2),
   .section--stories .profile:nth-of-type(3) {
     display: block;
